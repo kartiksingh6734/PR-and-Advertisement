@@ -1,0 +1,14 @@
+{
+  "name": "Elevora Growth Preview",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "postCreateCommand": "npm ci",
+  "postStartCommand": "bash .devcontainer/start-preview.sh",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Elevora Growth Website",
+      "onAutoForward": "openBrowser",
+      "protocol": "http"
+    }
+  }
+}
